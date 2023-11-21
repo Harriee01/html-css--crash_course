@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harex</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap">
+    <link rel="stylesheet" href="/pytrials/CSS/slide.css">
+    <link rel="stylesheet" href="/pytrials/CSS/anime.css">
+    <link rel="stylesheet" href="/Style.css">
+    
+
+    <style>
+      .fading {
+          opacity: 0;
+          transform: translateY(20px);
+          transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+      }
+
+      .field:hover .fading {
+          opacity: 1;
+          transform: translateY(0);
+          
+      }
+      .hidden-text {
+            opacity: 0;
+            transition: opacity 1s ease-in-out ;
+        }
+  </style>
+
+
+
+</head>
+<body style="background-color: #f4f4f4;">
+    <header style="background-color: #634b66;">
+        <div class="px-3 py-2 text-bg-dark border-bottom" >
+          <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start" style="background-color: #f2f4f3;">
+              <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+                <svg class="bi me-2" width="120" height="30" role="img" aria-label="Bootstrap and Harex" xmlns="http://www.w3.org/2000/svg">
+                  
+                    
+                    <!-- Text "Harex" -->
+                    <text x="28" y="22"font-family="Dancing Script, cursive, bold" font-size="28" fill="black">_Harex_</text>
+                </svg>
+                
+              </a>
+    
+              <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small" >
+                <li>
+                  <a href="#" class="nav-link text-secondary">
+                    <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#home"></use></svg>
+                    Home
+                  </a>
+                </li>
+                <li>
+                 
+                </li>
+                <li>
+                  <a href="#" class="nav-link text-secondary">
+                    <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#table"></use></svg>
+                    Orders
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="nav-link text-secondary">
+                    <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#grid"></use></svg>
+                    Products
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="nav-link text-secondary">
+                    <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#people-circle"></use></svg>
+                    Cart
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="px-3 py-2 border-bottom mb-3">
+          <div class="container d-flex flex-wrap justify-content-center">
+            <form class="col-12 col-lg-auto mb-2 mb-lg-0 me-lg-auto" role="search">
+              <input type="search" class="form-control" id="search input" name="search"  placeholder="Search..." aria-label="Search">
+            </form>
+    
+            <div class="text-end">
+              <button type="button" class="btn btn-light text-dark me-2">Login</button>
+              <button type="button" class="btn btn-primary">Sign-up</button>
+              <button type="button" class="btn btn-light text-dark me-2">All Categories</button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section>
+      <div class=" open content ">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1 style="text-align: center;" >
+          <strong style="font-family:Dancing Script, cursive ; font-size: 7rem; color: #8b575c;" class="fading">_Harex_ </strong>
+        </h1>
+        <div id="text-container">
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+
+          <p style="font-size: 2rem; font-family: Dancing Script,cursive; color: #696046; text-align: center;" class="hidden-text ">Quality and Affordable goods for all</p>
+        </div>
+
+        
+      </section>
+      
+      <span class="styled-br"></span>
+
+     <section>
+     <div class="container my-2 py-4" >
+      <div class="row justify-content-center">
+        <div class="col-lg-7 col-md-8">
+          <div class="text-center">
+            <h1 class="text-warning" style="font-size: 45px;">Trending</h1>
+              <p  style="color: #b594b6; font-size: 2rem;"> <span style="font-family: Dancing Script;">_Harex_</span> fashion deals</p>
+          </div>
+        </div>
+      </div>
+      <br>
+
+      <div class="slider">
+        <div class="mx-3">
+          <div class="card border-0 rounded-0"
+            style="background-image:url(/pytrials/images/tote2);background-size: cover;">
+            <div class="d-flex bg-opacity-25 justify-content-center align-items-end" style="height: 260px">
+              <div class="text-center pb-2 bg-dark w-100 pt-3 bg-opacity-75">
+                <a class="text-white fw-bold">Irish tote bag</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mx-3">
+          <div class="card border-0 rounded-0"
+            style="background-image:url(/pytrials/images/fullset.jpg) ;background-size: cover;">
+            <div class="d-flex bg-opacity-25 justify-content-center align-items-end" style="height: 260px">
+              <div class="text-center pb-2 bg-dark w-100 pt-3 bg-opacity-75">
+                <a class="text-white fw-bold">Complete bag set</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mx-3">
+          <div class="card border-0 rounded-0"
+            style="background-image:url(/pytrials/images/bracelet.jpg) ;background-size: cover;">
+            <div class="d-flex bg-opacity-25 justify-content-center align-items-end" style="height: 260px">
+              <div class="text-center pb-2 bg-dark w-100 pt-3 bg-opacity-75">
+                <a class="text-white fw-bold">Tahqing bracelet</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mx-3">
+          <div class="card border-0 rounded-0"
+            style="background-image:url(/pytrials/images/boss.jpg);background-size: cover;">
+            <div class="d-flex bg-opacity-25 justify-content-center align-items-end" style="height: 260px">
+              <div class="text-center pb-2 bg-dark w-100 pt-3 bg-opacity-75">
+                <a class="text-white fw-bold">Boss bracelet</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mx-3">
+          <div class="card border-0 rounded-0"
+            style="background-image:url(/pytrials/images/dress.jpg) ;background-size: cover;">
+            <div class="d-flex bg-opacity-25 justify-content-center align-items-end" style="height: 260px">
+              <div class="text-center pb-2 bg-dark w-100 pt-3 bg-opacity-75">
+                <a class="text-white fw-bold">Sweatshirt dress</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mx-3">
+          <div class="card border-0 rounded-0"
+            style="background-image:url(/pytrials/images/boy.jpg);background-size: cover;">
+            <div class="d-flex bg-opacity-25 justify-content-center align-items-end" style="height: 260px">
+              <div class="text-center pb-2 bg-dark w-100 pt-3 bg-opacity-75">
+                <a class="text-white fw-bold">Ketch wear</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    <span class="styled-br"></span>
+
+    <section >
+      <div class="field ">
+        <h1 style="text-align: center; font-style: italic; font-family: Dancing Script; font-size: 3rem;   color: #c6ad94; " >Zero stress</h1>
+        <div id="text-container">
+          <div class="hidden-text"  style="float: right; "> <img src="/pytrials/images/background2.jpg" class="rounded-circle"  style="border: 4px solid #e9b44c;" alt="image">
+          </div>
+          <p class="hidden-text" style="text-align: left; color: #e8f1f2; font-family: 'PlayFair Display',serif; font-size: 1.5rem;" >->  <span style="font-family: Dancing Script;">
+          _Harex_</span> ,shopping made wonderful and very easy.</p>
+          <div class="hidden-text"   style="float:right;"> <img src="/pytrials/images/back5.jpg" class="rounded-circle"  style="border: 4px solid #1c110a;"  alt="image">
+          </div>
+          <p class="hidden-text" style="text-align: left; color: #e8f1f2;font-family: 'PlayFair Display',serif;  font-size: 1.5rem;" >-> Affordable prices and flexible delivery services. 
+          </p>
+          <p class="hidden-text" style="text-align: left; color: #e8f1f2; font-family: 'PlayFair Display'; font-size: 1.5rem;"> -> Your order is just a click away🖱</p>
+          <p  class="hidden-text" style="text-align: center;"> <button type="button" class="btn btn-light text-dark me-2 rounded pill">Shop now</button></p>
+        </div>
+      </div>
+      </section>
+      <span class="styled-br"></span>
+
+      <section>
+        <div class="slider" >
+          <div class="mx-3">
+            <div class="card border-0 rounded-0"
+              style="background-image:url(/pytrials/images/stationbag) ;background-size: contain;background-position: center;">
+              <div class="d-flex bg-opacity-25 justify-content-center align-items-end" style="height: 400px">
+                <div class="text-center pb-2 bg-dark w-100 pt-3 bg-opacity-75">
+                  <a class="text-white fw-bold">School just got fun</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mx-3">
+            <div class="card border-0 rounded-0"
+              style="background-image:url(/pytrials/images/cosmo);background-size: contain;background-position: center;">
+              <div class="d-flex bg-opacity-25 justify-content-center align-items-end" style="height: 400px">
+                <div class="text-center pb-2 bg-dark w-100 pt-3 bg-opacity-75">
+                  <a class="text-white fw-bold">Your cosmetic needs are met with <span style="font-family:Dancing Script ;">_Harex_</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mx-3">
+            <div class="card border-0 rounded-0"
+              style="background-image:url(/pytrials/images/story\ books) ;background-size: contain;background-position: center;">
+              <div class="d-flex bg-opacity-25 justify-content-center align-items-end" style="height: 400px">
+                <div class="text-center pb-2 bg-dark w-100 pt-3 bg-opacity-75">
+                  <a class="text-white fw-bold">All your fav's authors and books are sorted</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mx-3">
+            <div class="card border-0 rounded-0"
+              style="background-image:url(/pytrials/images/shock1);background-size: contain; background-position: center;">
+              <div class="d-flex bg-opacity-25 justify-content-center align-items-end" style="height: 400px">
+                <div class="text-center pb-2 bg-dark w-100 pt-3 bg-opacity-75">
+                  <a class="text-white fw-bold">More amazing offers on <span style="font-family:Dancing Script ;">_Harex_</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+          </div>
+          
+      
+      </section>
+
+      <section>
+        <div class="backimage rounded-pill field fading">
+          <p style="font-family: Dancing Script; color: #e9b44c; text-align: center;" >Don't miss out, once every month</p>
+         
+        </div>
+      </section>
+      
+      
+
+     <script>
+      // Function to reveal hidden text one by one
+      function revealText() {
+          const textElements = document.querySelectorAll('.hidden-text');
+          
+          textElements.forEach((text, index) => {
+              setTimeout(() => {
+                  text.style.opacity = '1';
+              }, index * 3000); // Adjust the delay (in milliseconds) as needed
+          });
+      }
+
+      // Call the function when the page loads
+      window.onload = revealText;
+  </script>
+    
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    
+    
+  <script>
+
+    $('.slider').slick({
+      centerMode: true,
+      dots: true,
+      autoplay: true,
+      centerPadding: '60px',
+      slidesToShow: 3,
+      responsive: [{
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          Infinity: true,
+          slidesToShow: 1
+        },
+      }]
+    });
+    $('.fader').slick({
+  dots: true,
+  infinite: true,
+  speed: 500,
+  fade: true,
+  cssEase: 'linear'
+});
+
+  $(document).ready(function(){
+    $('.autoplays').slick({
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 5000,
+});
+
+    
+  });
+
+
+
+  </script>
+  <!-- Footer -->
+<footer class="text-center text-lg-start bg-body-tertiary text-muted">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span><strong> Get connected with us on social networks:</strong> </span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <div>
+        <a href="https://www.facebook.com/" class="me-4 text-dark">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://twitter.com/" class="me-4 text-reset" style="color: #8b575c;">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.google.com/" class="me-4 text-reset">
+            <i class="fab fa-google"></i>
+        </a>
+        <a href="https://www.instagram.com/" class="me-4 text-reset">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/" class="me-4 text-reset">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/" class="me-4 text-reset">
+            <i class="fab fa-github"></i>
+        </a>
+    </div>
+    
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i><span style="font-family: Dancing Script;">_Harex_</span>
+          </h6>
+          <p>
+            An internationally accredited online shop for amazing and affordable deals.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Products
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Clothing </a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Cosmetics</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Shoes </a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Stationery</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Many more...</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Pricing</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Settings</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Orders</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Help</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p><i class="fas fa-home me-3"></i> Kumasi, Ks 10012, GH</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            _harex_@gmail.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i> + 233 234 567 8843</p>
+          <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2023 Copyright:
+    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">_Harex_.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+</body>
+</html>
