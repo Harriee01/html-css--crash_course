@@ -1,0 +1,37 @@
+
+
+
+.content {
+    position: relative;
+    z-index: 1; /* Place content above the video */
+    color: #fff;
+    text-align: center;
+    padding: 50px;
+}
+
+
+@keyframes fade-inout{
+    0%{opacity: 1;}
+    100% {opacity: 0;}
+
+}
+
+.fading{
+    animation: fade-inout 5s infinite alternate-reverse;
+    font-size: 3rem;
+
+
+}
+
+.open{
+    background: url('/pytrials/images/gold\ flower.jpg');
+    background-size: cover;
+    height: 900px;
+}
+
+.field{
+    background-color: #8b575c;
+    height: 400px;
+}
+   
+ 
